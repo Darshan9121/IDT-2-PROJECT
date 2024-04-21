@@ -14,7 +14,7 @@ while ($logged_in_user = $res->fetch_object()) {
                 <div class="topbar-left">
                     <a href="dashboard.php" class="logo">
                         <i class="fa fa-car icon-c-logo"></i>
-                        <span>CPRS</span>
+                        <span>SCPS</span>
                     </a>
                 </div>
                 <!-- End Logo container-->
@@ -95,12 +95,10 @@ while ($logged_in_user = $res->fetch_object()) {
                             <a href="payments.php"><i class="zmdi zmdi-money-box"></i> <span> Payments </span> </a>
                         </li>
 
-                        <li>
-                            <a href="cctv.php"><i class="zmdi zmdi-videocam"></i> <span> CCTV Views </span> </a>
-                        </li>
+                       
 
 
-                        <li class="has-submenu">
+                        <!-- <li class="has-submenu">
                             <a href="#"><i class="zmdi zmdi-collection-item"></i> <span> Advanced Reporting </span> </a>
                             <ul class="submenu megamenu">
                                 <li>
@@ -113,7 +111,7 @@ while ($logged_in_user = $res->fetch_object()) {
                                 </li>
 
                             </ul>
-                        </li>
+                        </li> -->
 
                     </ul>
                     <!-- End navigation menu  -->

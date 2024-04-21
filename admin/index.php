@@ -30,7 +30,7 @@ require_once('../partials/head.php');
             <div class="card-box mb-0">
                 <div class="text-center m-t-20">
                     <a href="index.php" class="logo">
-                        <span>Car Parking Reservations System</span>
+                        <span class="text-dark">  Car Parking Reservations System</span>
                     </a>
                 </div>
                 <div class="m-t-10 p-20">
@@ -65,7 +65,7 @@ require_once('../partials/head.php');
 
                         <div class="form-group text-center row m-t-10">
                             <div class="col-12">
-                                <button class="btn btn-success btn-block waves-effect waves-light" name="login" type="submit">Log In</button>
+                                <button class="btn btn-dark btn-block waves-effect waves-light" name="login" type="submit">Log In</button>
                             </div>
                         </div>
 

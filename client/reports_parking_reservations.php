@@ -26,7 +26,7 @@ require_once("../partials/head.php");
                     <div class="page-title-box">
                         <div class="btn-group float-right m-t-15">
                         </div>
-                        <h4 class="page-title">My Recent Reservations Reports</h4>
+                        <h4 class="page-title">My Recent Reservations</h4>
                     </div>
                 </div>
             </div>
@@ -39,6 +39,7 @@ require_once("../partials/head.php");
                         <table id="datatable-buttons" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                             <thead>
                                 <tr>
+                                
                                     <th>My Name</th>
                                     <th>My Phone No</th>
                                     <th>Car Regno</th>
@@ -52,17 +53,18 @@ require_once("../partials/head.php");
                             <tbody>
                                 <?php
                                 $phone = $_SESSION['phone'];
-                                $ret = "SELECT * FROM `reservations` WHERE client_phone = '$phone' ";
+                                $ret = "SELECT * FROM `reservations` WHERE client_phone = '$phone'";
                                 $stmt = $mysqli->prepare($ret);
                                 $stmt->execute(); //ok
                                 $res = $stmt->get_result();
                                 while ($reserv = $res->fetch_object()) { ?>
                                     <tr>
+                                       
                                         <td><?php echo $reserv->client_name; ?></td>
                                         <td><?php echo $reserv->client_phone; ?></td>
                                         <td><?php echo $reserv->car_regno; ?></td>
                                         <td><?php echo $reserv->lot_number; ?></td>
-                                        <td>Ksh <?php echo $reserv->amt; ?></td>
+                                        <td>&#8360;<?php echo $reserv->amt; ?></td>
                                         <td><?php echo $reserv->parking_duration; ?> Hours</td>
                                         <td><?php echo $reserv->parking_date; ?></td>
 

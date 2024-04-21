@@ -97,9 +97,9 @@ require_once('../partials/head.php');
     <div class="wrapper-page">
         <div class="account-bg">
             <div class="card-box mb-0">
-                <div class="text-center m-t-20">
+                <div class="text-center m-t-20 text-dark">
                     <a href="index.php" class="logo">
-                        <span>Parking Lots Reservations </span>
+                        <span class="text-dark">Parking Lots Reservations </span>
                     </a>
                 </div>
                 <div class="m-t-10 p-20">
@@ -142,13 +142,13 @@ require_once('../partials/head.php');
 
                         <div class="form-group text-center row m-t-10">
                             <div class="col-12">
-                                <button class="btn btn-success btn-block waves-effect waves-light" name="create_account" type="submit">Create Account</button>
+                                <button class="btn btn-dark btn-block waves-effect waves-light text-light" name="create_account" type="submit">Create Account</button>
                             </div>
                         </div>
 
                         <div class="form-group row m-t-30 mb-0">
                             <div class="col-6">
-                                <a href="signup.php" class="text-muted"><i class="fa fa-sign-in m-r-5"></i>Log In</a>
+                                <a href="index.php" class="text-muted"><i class="fa fa-sign-in m-r-5"></i>Log In</a>
                             </div>
 
                             <div class="col-6">

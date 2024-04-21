@@ -43,9 +43,9 @@ require_once('../partials/head.php');
 
                 <div class="col-md-6 col-xl-4">
                     <div class="card-box tilebox-one">
-                        <i class="zmdi zmdi-money-box float-right text-muted"></i>
+                        <!-- <i class="zmdi zmdi-money-box float-right text-muted"></i> -->
                         <h6 class="text-muted text-uppercase m-b-20">Reservations Revenue</h6>
-                        <h2 class="m-b-20">Ksh <span data-plugin="counterup"><?php echo $reservations_revenue; ?></span></h2>
+                        <h2 class="m-b-20">&#8360; <span data-plugin="counterup"><?php echo $reservations_revenue; ?></span></h2>
                     </div>
                 </div>
 

@@ -1,6 +1,6 @@
 <?php
 $id  = $_SESSION['id'];
-$ret = "SELECT * FROM  clients  WHERE id = '$id'";
+$ret = "SELECT * FROM  clients  WHERE id = 'c94cafe21b6aff3ac908b183fa105247dadcf9282d5f7db7'";
 $stmt = $mysqli->prepare($ret);
 $stmt->execute(); //ok
 $res = $stmt->get_result();
@@ -14,7 +14,7 @@ while ($logged_in_user = $res->fetch_object()) {
                 <div class="topbar-left">
                     <a href="dashboard.php" class="logo">
                         <i class="fa fa-car icon-c-logo"></i>
-                        <span>CPRS</span>
+                        <span>SCPS</span>
                     </a>
                 </div>
                 <!-- End Logo container-->
@@ -95,13 +95,11 @@ while ($logged_in_user = $res->fetch_object()) {
 
                     
                         <li class="has-submenu">
-                            <a href="#"><i class="zmdi zmdi-collection-item"></i> <span> Advanced Reporting </span> </a>
-                            <ul class="submenu megamenu">
-                                <li>
-                                    <ul>
+                          
+                                    
                                         <li><a href="reports_parking_reservations.php">My Parking Reservations</a></li>
-                                        <li><a href="reports_payments.php">My Payments</a></li>
-                                    </ul>
+                                        
+                                    
                                 </li>
 
                             </ul>

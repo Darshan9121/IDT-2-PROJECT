@@ -155,6 +155,7 @@ require_once("../partials/head.php");
                         <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
                             <thead>
                                 <tr>
+                                <th>Reservation Id</th>
                                     <th>My Name</th>
                                     <th>My Phone No</th>
                                     <th>Car Regno</th>
@@ -169,17 +170,18 @@ require_once("../partials/head.php");
                             <tbody>
                                 <?php
                                 $phone = $_SESSION['phone'];
-                                $ret = "SELECT * FROM `reservations` WHERE client_phone = '$phone' ";
+                                $ret = "SELECT * FROM `reservations` WHERE client_phone = '$phone'  ";
                                 $stmt = $mysqli->prepare($ret);
                                 $stmt->execute(); //ok
                                 $res = $stmt->get_result();
                                 while ($reserv = $res->fetch_object()) { ?>
                                     <tr>
+                                    <td><?php echo $reserv->code; ?></td>
                                         <td><?php echo $reserv->client_name; ?></td>
                                         <td><?php echo $reserv->client_phone; ?></td>
                                         <td><?php echo $reserv->car_regno; ?></td>
                                         <td><?php echo $reserv->lot_number; ?></td>
-                                        <td>Ksh <?php echo $reserv->amt; ?></td>
+                                        <td>&#8360; <?php echo $reserv->amt; ?></td>
                                         <td><?php echo $reserv->parking_duration; ?> Hours</td>
                                         <td><?php echo $reserv->parking_date; ?></td>
                                         <td>
@@ -225,7 +227,7 @@ require_once("../partials/head.php");
                                                                                 <td><?php echo $reserv->code; ?></td>
                                                                                 <td><?php echo $reserv->car_regno; ?></td>
                                                                                 <td><?php echo $reserv->lot_number; ?></td>
-                                                                                <td>Ksh <?php echo $reserv->amt; ?></td>
+                                                                                <td>&#8360;<?php echo $reserv->amt; ?></td>
                                                                                 <td><?php echo $reserv->parking_duration; ?> Hours</td>
                                                                                 <td><?php echo $reserv->parking_date; ?></td>
                                                                             </tr>

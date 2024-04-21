@@ -265,8 +265,8 @@ File: Menu
   line-height: 60px;
 }
 
-.logo span span {
-  color: #1bb99a !important;
+.logo span {
+  color: black;
 }
 
 #topnav {

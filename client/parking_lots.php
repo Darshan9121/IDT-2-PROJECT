@@ -185,7 +185,7 @@ require_once("../partials/head.php");
                                             <td><?php echo $parking->code; ?></td>
                                             <td><?php echo $parking->location; ?></td>
                                             <td><?php echo $parking->parking_slots; ?></td>
-                                            <td>Ksh <?php echo $parking->price_per_slot; ?></td>
+                                            <td>&#8360;<?php echo $parking->price_per_slot; ?></td>
                                             <td>
                                                 <a href="#reserve-<?php echo $parking->id; ?>" data-toggle="modal" class="badge bg-warning">Reserve Parking Lot</a>
                                                 <!-- Update Modal -->

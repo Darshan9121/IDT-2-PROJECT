@@ -255,7 +255,7 @@ require_once("../partials/head.php");
                                 while ($pay = $res->fetch_object()) { ?>
                                     <tr>
                                         <td><?php echo $pay->code; ?></td>
-                                        <td>Ksh <?php echo $pay->amt; ?></td>
+                                        <td>&#8360;<?php echo $pay->amt; ?></td>
                                         <td><?php echo $pay->client_name; ?></td>
                                         <td><?php echo $pay->client_phone; ?></td>
                                         <td><?php echo date('d M Y g:ia', strtotime($pay->created_at)); ?></td>
